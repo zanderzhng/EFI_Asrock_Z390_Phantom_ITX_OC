@@ -294,9 +294,9 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string></string>
+			<string>Graphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string></string>
+			<string>Text</string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
