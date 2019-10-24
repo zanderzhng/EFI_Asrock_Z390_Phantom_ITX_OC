@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Force Enable RTC 强制使用 RTC 大部分Z390主板需要</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Fixes USB power and correct your EC devices, needed for all Catalina users.  仿冒EC控制器，加载USB电源管理</string>
 				<key>Enabled</key>
 				<true/>
