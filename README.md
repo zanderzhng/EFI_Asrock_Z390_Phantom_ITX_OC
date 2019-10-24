@@ -2,11 +2,12 @@
 ## BootLoader
 OpenCore
 ## BIOS Settings
-Load Defaults First
-| Item | Location | Value |
-| CSM | Boot | Disabled |
-| VT-d | CPU | Disabled |
-| XHCI Hand-off | USB | Enabled |
+Based on default settings.
+| Item | Location | Value | Effect |
+| --- | --- | --- | --- |
+| CSM | Boot | Disabled | IDK |
+| VT-d | CPU | Disabled | IDK |
+| XHCI Hand-off | USB | Enabled | IDK |
 ## Part List
 | Item | Model | Notes |
 | --- | --- | --- |
