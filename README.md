@@ -8,7 +8,7 @@ Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like 
 # Configs
 ## BIOS Settings (BIOS Version 4.20)
 Item | Default Value | My Value | Reason and Result
---- | --- | --- | --- |  ---
+--- | --- | --- | ---
 XHCI Hand-off | Disabled | **Enabled** | Boot stalls with USB devices connected. Seems to be the only necessary change in BIOS.
 CSM | Enabled | Enabled | Everyone instruction says disable  it but it seems to be no harm except for the resolution during booting.
 VT-d | Enabled | Enabled | Enable quirk ```DisableIoMapper``` then no need to disable VT-d.
