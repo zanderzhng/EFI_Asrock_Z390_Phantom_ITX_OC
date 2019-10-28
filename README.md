@@ -9,36 +9,42 @@ Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like 
 ## BIOS Settings (BIOS Version 4.20)
 Item | Default Value | My Value | Reason and Result
 --- | --- | --- | ---
-XHCI Hand-off | Disabled | **Enabled** | Boot stalls with USB devices connected. Seems to be the only necessary change in BIOS.
-CSM | Enabled | Enabled | Everyone instruction says disable  it but it seems to be no harm except for the resolution during booting.
+XHCI Hand-off | Disabled | **Enabled** | Boot stalls if with USB devices connected. Seems to be the only necessary change in BIOS.
+CSM | Enabled | Enabled | Everybody kept saying disable it but it seems to be no harm except for the super high resolution during booting on my 4K monitor. It's also no harm disabling it so totally up to you.
 VT-d | Enabled | Enabled | Enable quirk ```DisableIoMapper``` then no need to disable VT-d.
 ## OpenCore Config Details
 **Not all the configs were explained here**
 ### ACPI
 #### ACPI SSDT Patch
-- SSDT-PLUG ( fix XCPM )
+##### SSDT-AMAC (RTC Fix)
+macOS requires RTC._STA to return 0x0F, meaning RTC enabled. While Asrock BIOS (ASUS and some other compaines too) enabled AWAC and disabled RTC by default (Probably for Windows).
 
-   XCPM was said to bring better performance ( or sth blah blah ). At least it's harmless.
-   
-   You could verify it by ```sysctl -n machdep.xcpm.mode```
+After reviewing the codes, I replaced the old renaming hotpatch with SSDT-AWAC SSDT patch.
+The renaming hot patch replaced the ```If ((STAS == One))``` of RTC._STA in DSDT with ```If ((0xFF || 0xFFFF))``` , so the RTC._STA will always return 0x0F. It might lead to a conflict in the future, since both RTC and AWAC are enabled at the same time.
 
-   You might need to change PR00 to CPU0, depending on your MB model. You could query it by ```ioreg -p IODeviceTree -c IOACPIPlatformDevice -k cpu-type -k clock-frequency | egrep name | sed -e 's/ *[-|="<a-z>]//g'```
+If you failed to boot, you may find the renaming method in an older commit, or use ```SSDT-RTC0.dsl``` instead.
 
-   You might need to enable Intel SpeedStep in your BIOS.
-   
-   Reference: [SKL+平台XCPM+HWP完整原生电源管理探究](https://www.misonsky.cn/102.html), [macOS Native CPU/IGPU Power Management](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/), [SSDT-PLUG.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PLUG.dsl)
+Reference: [
+FIX for boot hangs after BIOS update (ACPI PATCH)](https://www.tonymacx86.com/threads/fix-for-boot-hangs-after-bios-update-acpi-patch.275091/page-7#post-1972443), [ACPISamples](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples)
 
-- SSDT-PPMC ( fix Preferences - Energy Saver options)
 
-    This SSDT fix seems to be harmless. I'll look into it later.
+##### SSDT-PLUG ( fix XCPM )
+XCPM was said to bring better performance ( or sth blah blah ). At least it's harmless.
 
-    You could verify it by looking into Preferences.
+Check status by ```sysctl -n machdep.xcpm.mode```.
+
+You might need to change PR00 to CPU0, depending on your MB model. You could query this by ```ioreg -p IODeviceTree -c IOACPIPlatformDevice -k cpu-type -k clock-frequency | egrep name | sed -e 's/ *[-|="<a-z>]//g'```
+
+You might need to enable Intel SpeedStep in your BIOS. For my MB it's enabled by default.
+
+Reference: [SKL+平台XCPM+HWP完整原生电源管理探究](https://www.misonsky.cn/102.html), [macOS Native CPU/IGPU Power Management](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/), [SSDT-PLUG.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PLUG.dsl)
+
+##### SSDT-PPMC ( fix Preferences - Energy Saver options)
+This SSDT fix seems to be harmless.
+
+You could verify it by looking into Preferences. You should be able to see 5 options instead of 2.
 #### ACPI Hotpatch
-- RTC Fix
-    
-    macOS requires RTC._STA to return 0x0F. This hot patch replaced the ```If ((STAS == One))``` of RTC._STA with ```If ((0xFF || 0xFFFF))``` , so the RTC._STA will always return 0x0F.
-    
-    If you are using this hotpatch and failed to boot into other systems, you may replace this patch with either ```SSDT-AWAC``` or ```SSDT-RTC0```. You should use only one of them.
+
 ### Kernel
 #### Quirk
 - DisableIoMapper = YES.
