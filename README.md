@@ -16,7 +16,9 @@ VT-d | Enabled | Enabled | Enable quirk ```DisableIoMapper``` then no need to di
 **Not all the configs were explained here**
 ### ACPI
 #### ACPI SSDT Patch
-##### SSDT-AMAC (RTC Fix)
+
+<details><summary>SSDT-AMAC for fixing RTC</summary>
+  
 macOS requires RTC._STA to return 0x0F, meaning RTC enabled. While Asrock BIOS (ASUS and some other compaines too) enabled AWAC and disabled RTC by default (Probably for Windows).
 
 After reviewing the codes, I replaced the old renaming hotpatch with SSDT-AWAC SSDT patch.
@@ -27,8 +29,9 @@ If you failed to boot, you may find the renaming method in an older commit, or u
 Reference: [
 FIX for boot hangs after BIOS update (ACPI PATCH)](https://www.tonymacx86.com/threads/fix-for-boot-hangs-after-bios-update-acpi-patch.275091/page-7#post-1972443), [ACPISamples](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples)
 
+</details>
+<details><summary>SSDT-PLUG enables XCPM</summary>
 
-##### SSDT-PLUG ( fix XCPM )
 XCPM was said to bring better performance ( or sth blah blah ). At least it's harmless.
 
 Check status by ```sysctl -n machdep.xcpm.mode```.
@@ -39,11 +42,14 @@ You might need to enable Intel SpeedStep in your BIOS. For my MB it's enabled by
 
 Reference: [SKL+平台XCPM+HWP完整原生电源管理探究](https://www.misonsky.cn/102.html), [macOS Native CPU/IGPU Power Management](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/), [SSDT-PLUG.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PLUG.dsl)
 
-##### SSDT-PPMC ( fix Preferences - Energy Saver options)
+</details>
+<details><summary>SSDT-PPMC fix energy saver options</summary>
+
 This SSDT fix seems to be harmless.
 
 You could verify it by looking into Preferences. You should be able to see 5 options instead of 2.
-#### ACPI Hotpatch
+
+</details>
 
 ### Kernel
 #### Quirk
