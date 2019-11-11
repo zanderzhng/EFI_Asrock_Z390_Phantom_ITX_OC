@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>fix rtc</string>
+				<string>fix rtc, better than rename hotpatch.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>加载X86，原生电源管理</string>
+				<string>RP00 power management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>加载‘节能’中‘断电后自动启动选项’</string>
+				<string>load AppleIntelPCHPMC, more options in energy saving</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>

@@ -7,12 +7,25 @@ WIFI / BLE | BCM94360CS2 | With M.2. adapter
 Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like Clover did.
 # Configs
 ## BIOS Settings (BIOS Version 4.20)
-Item | Default Value | My Value | Reason and Result
---- | --- | --- | ---
-XHCI Hand-off | Disabled | **Enabled** | Boot stalls if with USB devices connected. Seems to be the only necessary change in BIOS.
-CSM | Enabled | Enabled | Everybody kept saying disable it but it seems to be no harm except for the super high resolution during booting on my 4K monitor. It's also no harm disabling it so totally up to you.
-VT-d | Enabled | Enabled | Enable quirk ```DisableIoMapper``` then no need to disable VT-d.
-iGPU Multi-Monitor | Disabled | Disabled | Probably necessary for those using dGPU.
+Location | Item | Default Value | My Value | Reason and Result
+--- | --- | --- | --- | ---
+Advanced | Fast Boot | Disabled | Disabled | DK.
+Advanced | CFG Lock | Disabled | Disabled | Need more resarch
+Advanced | VT-d | Enabled | Enabled | **Enable quirk ```DisableIoMapper``` then no need to disable VT-d.**
+Advanced | CSM | Enabled | Enabled | Everybody kept saying disable it but it seems to be no harm except for the super high resolution during booting on my 4K monitor. It's also no harm disabling it so up to you.
+Advanced | VT-x | Enabled | Enabled | Need more research
+Advanced | Above 4G decoding | Disabled | Disabled | Need more research
+Advanced | Hyper Threading | Enabled | Enabled | Need more research
+Advanced | Execute Disable Bit | Enabled | Enabled | Need more research
+Advanced | EHCI/XHCI Hand-off | Disabled | **Enabled** | Boot stalls if with USB devices connected. Seems to be the only necessary change in BIOS.
+Others | OS type | No option | No option | No option
+Advanced | Intel SGX | Enabled | Enabled | Need more research
+Security | Intel(R) Platform Trust Technology | Disabled | Disabled | Need more resarch
+Advanced | Thunderbolt | Enabled | Enabled | Need more resarch
+Advanced | iGPU Multi-Monitor | Disabled | Disabled | Probably necessary for those using dGPU.
+
+
+
 ## OpenCore Config Details
 **Not all the configs were explained here**
 ### ACPI
