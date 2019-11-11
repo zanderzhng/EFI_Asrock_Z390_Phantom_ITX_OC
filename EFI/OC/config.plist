@@ -36,18 +36,7 @@
 		<key>Patch</key>
 		<array/>
 		<key>Quirks</key>
-		<dict>
-			<key>FadtEnableReset</key>
-			<false/>
-			<key>NormalizeHeaders</key>
-			<false/>
-			<key>RebaseRegions</key>
-			<false/>
-			<key>ResetHwSig</key>
-			<false/>
-			<key>ResetLogoStatus</key>
-			<false/>
-		</dict>
+		<dict/>
 	</dict>
 	<key>Booter</key>
 	<dict>
