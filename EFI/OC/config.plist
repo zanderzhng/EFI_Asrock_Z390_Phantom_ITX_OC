@@ -278,38 +278,15 @@
 		<key>Block</key>
 		<array/>
 		<key>Emulate</key>
-		<dict>
-			<key>Cpuid1Data</key>
-			<data>
-			</data>
-			<key>Cpuid1Mask</key>
-			<data>
-			</data>
-		</dict>
+		<dict/>
 		<key>Patch</key>
 		<array/>
 		<key>Quirks</key>
 		<dict>
-			<key>AppleCpuPmCfgLock</key>
-			<false/>
-			<key>AppleXcpmCfgLock</key>
-			<false/>
-			<key>AppleXcpmExtraMsrs</key>
-			<false/>
-			<key>CustomSMBIOSGuid</key>
-			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
-			<key>ExternalDiskIcons</key>
-			<false/>
-			<key>LapicKernelPanic</key>
-			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
-			<key>ThirdPartyTrim</key>
-			<false/>
-			<key>XhciPortLimit</key>
-			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
