@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>USBPorts-z390-ASRock-PhGmITX-iMac18,1</string>
+	<string>USBPorts-z390-ASRock-PhGmITX-iMac19,1</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -24,7 +24,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>iMac18,1-XHC</key>
+		<key>iMac19,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -95,13 +95,13 @@
 						CAAAAA==
 						</data>
 					</dict>
-					<key>HS10</key>
+					<key>HS09</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
 						<data>
-						CgAAAA==
+						CQAAAA==
 						</data>
 					</dict>
 					<key>HS11</key>
@@ -167,13 +167,13 @@
 						FQAAAA==
 						</data>
 					</dict>
-					<key>SS07</key>
+					<key>SS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
 						<data>
-						FwAAAA==
+						FgAAAA==
 						</data>
 					</dict>
 					<key>SS08</key>
@@ -188,9 +188,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMac18,1</string>
+			<string>iMac19,1</string>
 		</dict>
-		<key>iMac18,1-XHC2</key>
+		<key>iMac19,1-XHC2</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBXHCIAR</string>
@@ -254,7 +254,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMac18,1</string>
+			<string>iMac19,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
