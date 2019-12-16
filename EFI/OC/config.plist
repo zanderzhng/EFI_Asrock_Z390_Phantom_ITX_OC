@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>加载X86，原生电源管理</string>
+				<string>cpu power management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>加载‘节能’中‘断电后自动启动选项’</string>
+				<string>5 options in system preferences - energy saving</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -83,18 +83,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
-			<dict>
-				<key>model</key>
-				<string>AMD Radeon RX 460z</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>
-				BwAAAA==
-				</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -105,14 +93,19 @@
 				<data>
 				mD4AAA==
 				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
 			</dict>
-		</dict>
-		<key>Block</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<array>
-				<string>MaximumBootBeepVolume</string>
-			</array>
 		</dict>
 	</dict>
 	<key>Kernel</key>
@@ -153,7 +146,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SMCProcessor.kext</string>
+				<string>VirtualSMC.kext/Contents/PlugIns/SMCProcessor.kext</string>
 				<key>Comment</key>
 				<string>Processor Temp</string>
 				<key>Enabled</key>
@@ -169,7 +162,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SMCSuperIO.kext</string>
+				<string>VirtualSMC.kext/Contents/PlugIns/SMCSuperIO.kext</string>
 				<key>Comment</key>
 				<string>IO Temp</string>
 				<key>Enabled</key>
