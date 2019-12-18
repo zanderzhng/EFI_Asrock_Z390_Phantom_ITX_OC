@@ -12,7 +12,7 @@ Location | Item | Default Value | My Value | Reason and Result
 Advanced | Fast Boot | Disabled | Disabled | DK.
 Advanced | CFG Lock | Disabled | Disabled | Need more resarch
 Advanced | VT-d | Enabled | Enabled | **Enable quirk ```DisableIoMapper``` then no need to disable VT-d.**
-Advanced | CSM | Enabled | Enabled | Everybody kept saying disable it but it seems to be no harm except for the super high resolution during booting on my 4K monitor. It's also no harm disabling it so up to you.
+Advanced | CSM | Enabled | Disabled | Everybody kept saying disable it but it seems to be no harm except for the super high resolution during booting on my 4K monitor. It's also no harm disabling it so up to you.
 Advanced | VT-x | Enabled | Enabled | Need more research
 Advanced | Above 4G decoding | Disabled | Disabled | Need more research
 Advanced | Hyper Threading | Enabled | Enabled | Need more research
