@@ -404,8 +404,8 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
+			<string>ApfsDriverLoader.efi</string>
 			<string>UsbKbDxe.efi</string>
 			<string>HFSPlus.efi</string>
 			<string>VirtualSmc.efi</string>

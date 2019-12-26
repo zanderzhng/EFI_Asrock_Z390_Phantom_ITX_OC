@@ -6,7 +6,7 @@ MotherBoard | ASRock Z390 Phantom Gaming-ITX/ac
 WIFI / BLE | BCM94360CS2 | With M.2. adapter
 Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like Clover did.
 # Configs
-## BIOS Settings (BIOS Version 4.20)
+## BIOS Settings (BIOS Version 4.30)
 Location | Item | Default Value | My Value | Reason and Result
 --- | --- | --- | --- | ---
 Advanced | Fast Boot | Disabled | Disabled | DK.
