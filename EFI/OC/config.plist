@@ -459,7 +459,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>HIDDEN</string>
+			<string>***REMOVED***</string>
 			<key>ROM</key>
 			<data>
 			ESIzAAAA
@@ -469,9 +469,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>HIDDEN</string>
+			<string>***REMOVED***</string>
 			<key>SystemUUID</key>
-			<string>HIDDEN</string>
+			<string>***REMOVED***</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
