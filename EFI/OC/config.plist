@@ -7,42 +7,56 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>This is the 300 series RTC patch.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-AWAC.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Corrects your EC devices, needed for all Catalina users.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Prevent from wake.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Allows for native CPU power management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Intel 300-series PMC support for macOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PMC.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
