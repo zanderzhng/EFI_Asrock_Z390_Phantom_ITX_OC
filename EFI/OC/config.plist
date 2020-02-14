@@ -408,9 +408,7 @@
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
-			<integer>5</integer>
-			<key>UsePicker</key>
-			<true/>
+			<integer>1</integer>
 		</dict>
 		<key>Security</key>
 		<dict>
