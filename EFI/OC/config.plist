@@ -545,8 +545,6 @@
 		<dict>
 			<key>ProvideConsoleGop</key>
 			<true/>
-			<key>ProvideEarlyConsole</key>
-			<true/>
 		</dict>
 		<key>Protocols</key>
 		<dict>
