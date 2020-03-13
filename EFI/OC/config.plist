@@ -414,7 +414,7 @@
 			<key>HideSelf</key>
 			<true/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
@@ -529,6 +529,7 @@
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
 			<string>HFSPlus.efi</string>
+			<string>NdkBootPicker.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
