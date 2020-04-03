@@ -333,14 +333,22 @@
 		<dict>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HideAuxiliary</key>
+			<true/>
 			<key>HideSelf</key>
 			<true/>
+			<key>PickerAttributes</key>
+			<integer>0</integer>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PollAppleHotKeys</key>
+			<true/>
 			<key>ShowPicker</key>
 			<true/>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>1</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Security</key>
 		<dict>
@@ -426,9 +434,9 @@
 		<key>Drivers</key>
 		<array>
 			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
 			<string>HFSPlus.efi</string>
-			<string>NdkBootPicker.efi</string>
+			<string>OpenCanopy.efi</string>
+			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
