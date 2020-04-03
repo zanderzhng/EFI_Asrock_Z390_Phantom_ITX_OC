@@ -48,9 +48,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Thunderbolt</string>
+				<string>Thunderbolt, useless for me.</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-TbtOnPch.aml</string>
 			</dict>
