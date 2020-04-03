@@ -378,7 +378,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>slide=1</string>
+				<string>slide=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<string>00000000</string>
 			</dict>
