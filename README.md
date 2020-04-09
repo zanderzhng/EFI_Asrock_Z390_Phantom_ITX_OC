@@ -1,11 +1,11 @@
 # Part List
 Item | Model | Notes
 --- | --- | --- |
-CPU | Intel i7 8700
+CPU | Intel i7 8700 | 
 MotherBoard | ASRock Z390 Phantom Gaming-ITX/ac
-WIFI | BLE | BCM94360CS2 | With M.2. adapter
+WIFI | BLE | DW1820A | Apple Watch Auto Unlock Not Working
 Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like Clover did.
-dGPU | RX470 | 
+dGPU | RX460 | 
 # Configs
 ## BIOS Settings (BIOS Version 4.30)
 Location | Item | Default Value | My Value | Reason and Result
