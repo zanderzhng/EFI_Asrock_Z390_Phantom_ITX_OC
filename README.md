@@ -41,13 +41,13 @@ Reference: [
 FIX for boot hangs after BIOS update (ACPI PATCH)](https://www.tonymacx86.com/threads/fix-for-boot-hangs-after-bios-update-acpi-patch.275091/page-7#post-1972443), [ACPISamples](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples)
 
 </details>
-<details><summary>SSDT-PLUG enables XCPM</summary>
+<details><summary>SSDT-PLUG enables Native Power Management</summary>
 
 XCPM was said to bring better performance ( or sth blah blah ). At least it's harmless.  
-Check status by ```sysctl -n machdep.xcpm.mode```.  
+Check status by ```sysctl -n machdep.xcpm.mode```.  1 for enabled.
 You might need to change PR00 to CPU0, depending on your MB model. You could query this by ```ioreg -p IODeviceTree -c IOACPIPlatformDevice -k cpu-type -k clock-frequency | egrep name | sed -e 's/ *[-|="<a-z>]//g'```  
 You might need to enable Intel SpeedStep in your BIOS. For my MB it's enabled by default.  
-Reference: [SKL+平台XCPM+HWP完整原生电源管理探究](https://www.misonsky.cn/102.html), [macOS Native CPU/IGPU Power Management](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/), [SSDT-PLUG.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PLUG.dsl)
+Reference: [Fixing Power Management](https://dortania.github.io/OpenCore-Desktop-Guide/post-install/pm.html), [SKL+平台XCPM+HWP完整原生电源管理探究](https://www.misonsky.cn/102.html), [macOS Native CPU/IGPU Power Management](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/), [SSDT-PLUG.dsl](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-PLUG.dsl)
 
 </details>
 <details><summary>SSDT-PPMC fix energy saver options</summary>
