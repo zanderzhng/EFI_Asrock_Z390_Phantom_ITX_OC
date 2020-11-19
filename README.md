@@ -3,7 +3,7 @@ Item | Model | Notes
 --- | --- | --- |
 CPU | Intel i7 8700 | 
 MotherBoard | ASRock Z390 Phantom Gaming-ITX/ac
-WIFI | BLE | DW1820A | Apple Watch Auto Unlock Not Working
+WIFI | BLE | BCM94360CS2 | Apple Watch Auto Unlock Working
 Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like Clover did.
 dGPU | RX460 | 
 System | macOS 11.0.1 | direct upgrade from 10.15.6 to 11.0.1 using build 2aa2cfe.
