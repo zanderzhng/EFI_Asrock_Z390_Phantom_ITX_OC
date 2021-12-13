@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>AWAC, essential</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -18,13 +18,13 @@
 				<key>Comment</key>
 				<string>TB3</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-DTPG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>EC, essential</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>CPU management, essential</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>NVRAM, essential</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -66,7 +66,7 @@
 				<key>Comment</key>
 				<string>TB3</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-TbtOnPch_PINI.aml</string>
 			</dict>
@@ -177,7 +177,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				X0UyQw==
