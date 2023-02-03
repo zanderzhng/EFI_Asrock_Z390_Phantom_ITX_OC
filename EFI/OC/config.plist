@@ -248,6 +248,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
+				<key>brcmfx-country</key>
+				<string>#a</string>
 				<key>compatible</key>
 				<string>pci14e4,43a0</string>
 				<key>device_type</key>
@@ -257,7 +259,7 @@
 				<key>name</key>
 				<string>Airport</string>
 				<key>pci-aspm-default</key>
-				<integer>0</integer>
+				<data>AAAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
@@ -945,7 +947,7 @@
 				<key>SystemAudioVolume</key>
 				<data>UA==</data>
 				<key>boot-args</key>
-				<string>-v alcid=7 agdpmod=pikera slide=1 darkwake=0 debug=0x100 keepsyms=1 swd_panic=1 brcmfx-country=#a brcmfx-aspm brcmfx-driver=2</string>
+				<string>-v alcid=7 agdpmod=pikera slide=1 darkwake=0 debug=0x100 keepsyms=1 swd_panic=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
