@@ -400,7 +400,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>SMC emulator</string>
+				<string>VirtualSMC related</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -418,7 +418,7 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>VirtualSMC related</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -436,7 +436,7 @@
 				<key>BundlePath</key>
 				<string>RadeonSensor.kext</string>
 				<key>Comment</key>
-				<string>Radeon Sensors</string>
+				<string>Radeon Sensors support</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -454,7 +454,7 @@
 				<key>BundlePath</key>
 				<string>SMCRadeonGPU.kext</string>
 				<key>Comment</key>
-				<string>sensor temp for virtualSMC</string>
+				<string>VirtualSMC + Radeon</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -506,24 +506,6 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>15.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -567,24 +549,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>

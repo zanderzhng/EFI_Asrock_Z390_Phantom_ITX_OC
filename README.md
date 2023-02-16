@@ -1,12 +1,13 @@
-# Part List
+# Part and function list
 Item | Model | Notes
 --- | --- | --- |
 CPU | Intel i7 8700 | 
-MotherBoard | ASRock Z390 Phantom Gaming-ITX/ac
-WIFI | BLE | BCM94360CS2 | Apple Watch Auto Unlock Working
-Memory | Asgard 32GB * 2 | OC doesn't require remapping 32GB single memory like Clover did.
-dGPU | RX460 | 
-System | macOS 11.0.1 | direct upgrade from 10.15.6 to 11.0.1 using build 2aa2cfe.
+MotherBoard | ASRock Z390 Phantom Gaming-ITX/ac | TB3 might be working
+WIFI | DW1820A | Apple Watch Unlock / Handoff Not Working
+Bluetooth | DW1820A | Good
+Memory | Asgard 32GB * 2 |
+dGPU | AMD RX 6600 | 
+System | macOS 13.2.1 | OTA upgrading working
 
 # Configs
 ## BIOS Settings (BIOS Version 4.30)
@@ -22,12 +23,14 @@ Advanced | Hyper Threading | Enabled | Enabled | Need more research
 Advanced | Execute Disable Bit | Enabled | Enabled | Need more research
 Advanced | EHCI/XHCI Hand-off | Disabled | **Enabled** | Boot stalls if with USB devices connected. Seems to be the only necessary change in BIOS.
 Others | OS type | No option | No option | No option
-Advanced | Intel SGX | Enabled | **Disabled** | Could be useful to disable it.
-Security | Intel(R) Platform Trust Technology | Disabled | Disabled | Need more resarch
-Advanced | Thunderbolt | Enabled | Enabled | Need more resarch
+Advanced | Intel SGX | Enabled | **Disabled** | Could be useful by disabling it.
+Security | Intel(R) Platform Trust Technology | Disabled | Disabled | Need more research.
+Advanced | Thunderbolt | Enabled | Enabled | Following others research, not tested.
 Advanced | iGPU Multi-Monitor | Disabled | Disabled | Probably necessary for those using dGPU.
 
-
+# Functions
+## Bluetooth working
+## 
 
 ## OpenCore Config Details
 **Not all the configs were explained here**
