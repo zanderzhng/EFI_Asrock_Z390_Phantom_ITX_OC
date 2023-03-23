@@ -245,7 +245,7 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -256,6 +256,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Slot-1</string>
+				<key>CFG,CFG_USE_AGDC</key>
+				<data>AA==</data>
 				<key>disable-gpu</key>
 				<false/>
 			</dict>
@@ -266,7 +268,7 @@
 				<key>brcmfx-country</key>
 				<string>#a</string>
 				<key>compatible</key>
-				<string>pci14e4,43a0</string>
+				<string>pci14e4,43a3</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
